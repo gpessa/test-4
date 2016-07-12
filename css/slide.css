@@ -27,7 +27,6 @@
   left: 2em;
   bottom: 7em;
 }
-
 .slide--1 .slide__title,
 .slide--2 .slide__title,
 .slide--6 .slide__title,
@@ -38,8 +37,7 @@
   right: 1.4em;
 }
 .slide--3 .slide__title,
-.slide--4 .slide__title,
-.slide--9 .slide__title{
+.slide--4 .slide__title{
   right: 1.4em;
   left: 1.4em;
   top: 4.05em;
@@ -61,4 +59,17 @@
   left: 5em;
   top: 20em;
   text-align: right;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .slide{
+    padding: 4em;
+  }
+  .slide__title{
+    position: initial;
+    font-size:3em;
+  }
+  .slide__content{
+    position: initial;
+  }
 }

@@ -10,3 +10,12 @@
 .contact-us__link{
   text-decoration: none;
 }
+
+
+/** IPHONE **/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .contact-us__item{
+    display: block;
+    margin-top: 1em;
+  }
+}

@@ -1,16 +1,15 @@
-.controll{
-  background:transparent;
-  position:absolute;
-  width:4em;
-  height:100%;
-  top:0;
+.controll {
+  background: transparent;
+  position: absolute;
+  width: 4em;
+  height: 100%;
+  top: 0;
   border: none;
   outline: none;
   cursor: pointer;
 }
-
-.controll:after{
-  content:'';
+.controll:after {
+  content: '';
   position: absolute;
   display: block;
   width: 3em;
@@ -22,67 +21,62 @@
   margin: 0 0;
   transition: all 0.3s ease-in-out;
 }
-
 .controll:hover:after {
   opacity: 0.5;
   margin: 0 10px;
 }
-
-.controll--pre{
+.controll--pre {
   left: 30px;
 }
-
-.controll--pre:after{
+.controll--pre:after {
   right: 0;
   transform: rotate(-45deg);
 }
-
-.controll--next{
+.controll--next {
   right: 30px;
 }
-
-.controll--next:after{
-  left:0;
+.controll--next:after {
+  left: 0;
   transform: rotate(135deg);
 }
-
-.controll--inactive{
-  animation : fadeIn 100ms linear;
-  opacity : 0.5;
-  top:-100%;
+.controll--inactive {
+  animation: fadeIn 100ms linear;
+  opacity: 0.5;
+  top: -100%;
 }
-
-.full-screen-slider{
+.full-screen-slider {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
 }
-
-.full-screen-slider__pager{
+.full-screen-slider__pager {
   position: absolute;
   bottom: 2em;
   left: 2em;
 }
-
-.full-screen-slider__slide{
+.full-screen-slider__slide {
   position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
   transition: opacity 0.5s;
 }
-
-.full-screen-slider__slide--active{
+.full-screen-slider__slide--active {
   animation: fadeIn 1.5s linear 1;
   opacity: 1;
 }
-
 @keyframes fadeIn {
-    from {opacity:0}
-    80% {opacity: 0}
-    100% {opacity:1}
+  from {
+    opacity: 0
+  }
+  80% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
