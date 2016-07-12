@@ -1,0 +1,32 @@
+@import 'pagerElement.css';
+@import 'fonts.css';
+@import 'slide.css';
+@import 'full-screen-slider.css';
+@import 'loader-element.css';
+@import 'svg-icon.css';
+@import 'contact-us.css';
+@import 'logo.css';
+@import 'exception.css';
+
+
+
+body{
+  font-family:'klavika';
+  font-weight: 200;
+	background: #000;
+	color:#fff;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+h1{
+  font-size: 4.5em;
+}
+
+a{
+  color:inherit;
+}

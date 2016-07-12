@@ -1,0 +1,78 @@
+
+
+.full-screen-slider{
+  counter-reset: item;
+}
+.pager-element__item:not(:first-child):not(:last-child){
+  counter-increment: item;
+}
+.pager-element__item:not(:first-child):not(:last-child) .pager-element__link:before{
+  content: counter(item, decimal);
+}
+.pager-element__item:not(:first-child):not(:last-child):after{
+  content: 'Step ' counter(item) ' out of 8 on the path of digital enlightenment';
+  position: absolute;
+  left: 100%;
+  margin-left: 50px;
+  white-space: nowrap;
+  top: 0.3em;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.pager-element__item--active:after{
+  animation: fadeIn 1.5s linear 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {opacity:0}
+  80% {opacity: 0}
+  100% {opacity:1}
+}
+
+
+.logo{
+  position: fixed;
+  bottom: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+
+.full-screen-slider{
+  background-image: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: background-position 1s;
+}
+.full-screen-slider__slider0{
+  background-position: 0% center;
+}
+.full-screen-slider__slider1{
+  background-position: 14% center;
+}
+.full-screen-slider__slider2{
+  background-position: 22% center;
+}
+.full-screen-slider__slider3{
+  background-position: 37% center;
+}
+.full-screen-slider__slider4{
+  background-position: 51% center;
+}
+.full-screen-slider__slider5{
+  background-position: 66% center;
+}
+.full-screen-slider__slider6{
+  background-position: 79% center;
+}
+.full-screen-slider__slider7{
+  background-position: 96% center;
+}
+.full-screen-slider__slider8{
+  background-position: 100% center;
+}
+.full-screen-slider__slider9{
+  background-position: 115% center;
+}

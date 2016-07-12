@@ -1,0 +1,27 @@
+.pager-element__list{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pager-element__item{
+	display: block;
+	border: 2px dotted;
+	margin-left: -2px;
+}
+.pager-element__link{
+  text-decoration: none;
+  color: inherit;
+  line-height: 0.8;
+  padding: 0 0.5em;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s 0.2s;
+  margin: 0.3em;
+}
+.pager-element__item--active .pager-element__link{
+	background: #fff;
+}

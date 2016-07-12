@@ -1,0 +1,12 @@
+.svg-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+  display: inline-block;
+}
+
+.svg-icon svg{
+  width: 100%;
+  height: auto;
+  fill: #fff;
+}

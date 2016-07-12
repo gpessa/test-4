@@ -1,0 +1,12 @@
+.contact-us{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-us__item{
+  display: inline-block;
+  margin-left: 20px;
+}
+.contact-us__link{
+  text-decoration: none;
+}
